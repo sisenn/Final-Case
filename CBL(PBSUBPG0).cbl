@@ -99,7 +99,7 @@
               WHEN 3
                  MOVE 1 TO FLAG
               WHEN OTHER
-                 MOVE 'WRONG RECORD. RC: ' TO LS-EXP
+                 MOVE 'WRONG RECORD' TO LS-EXP
                  GOBACK
            END-EVALUATE
            END-READ.
@@ -181,7 +181,7 @@
        H500-DELETE-FUNC.
            PERFORM H150-KEY-CONTROL.
            DELETE IDX-FILE.
-           MOVE 'SUCCESSFULLY DELETED ' TO LS-EXP.
+           MOVE 'SUCCESSFULLY DELETED' TO LS-EXP.
            GOBACK.
        H500-END. EXIT.
       *----
